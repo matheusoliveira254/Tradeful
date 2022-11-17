@@ -230,6 +230,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In">
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7hw-Ei-ZY9" kind="show" identifier="toAddListingSignIn" id="OPe-sD-51A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-ta-FaS">
                                 <rect key="frame" x="56" y="438.33333333333331" width="278" height="44"/>
@@ -350,26 +353,26 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trD-s8-FXq">
-                                <rect key="frame" x="16" y="427" width="358" height="23"/>
+                                <rect key="frame" x="16" y="417" width="358" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Description (75 Words Limit)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-Vq-9D7">
-                                <rect key="frame" x="16" y="515" width="358" height="23"/>
+                                <rect key="frame" x="16" y="505" width="358" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nml-ft-8kC">
-                                <rect key="frame" x="16" y="546" width="358" height="274"/>
+                                <rect key="frame" x="16" y="536" width="358" height="284"/>
                                 <color key="backgroundColor" red="0.95688873529999996" green="0.95679587129999999" blue="0.96078485250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-dd-7Ja">
-                                <rect key="frame" x="10" y="458" width="370" height="32"/>
+                                <rect key="frame" x="10" y="448" width="370" height="32"/>
                                 <segments>
                                     <segment title="Home"/>
                                     <segment title="Sporting"/>
@@ -399,7 +402,7 @@
                             <constraint firstItem="Nml-ft-8kC" firstAttribute="leading" secondItem="KxK-Tg-7dm" secondAttribute="leading" constant="16" id="Wtf-0V-HcA"/>
                             <constraint firstItem="Af9-Vq-9D7" firstAttribute="leading" secondItem="KxK-Tg-7dm" secondAttribute="leading" constant="16" id="chj-0v-tJx"/>
                             <constraint firstItem="KxK-Tg-7dm" firstAttribute="trailing" secondItem="Af9-Vq-9D7" secondAttribute="trailing" constant="16" id="egN-dZ-fy3"/>
-                            <constraint firstItem="trD-s8-FXq" firstAttribute="top" secondItem="AhN-gP-qsI" secondAttribute="bottom" constant="26" id="kuw-Ts-IdM"/>
+                            <constraint firstItem="trD-s8-FXq" firstAttribute="top" secondItem="AhN-gP-qsI" secondAttribute="bottom" constant="16" id="kuw-Ts-IdM"/>
                             <constraint firstItem="d8M-e2-P7j" firstAttribute="leading" secondItem="KxK-Tg-7dm" secondAttribute="leading" constant="16" id="ln1-2F-M1J"/>
                             <constraint firstItem="pCs-tg-8iW" firstAttribute="leading" secondItem="KxK-Tg-7dm" secondAttribute="leading" constant="16" id="meF-XV-vOr"/>
                             <constraint firstItem="KxK-Tg-7dm" firstAttribute="trailing" secondItem="mwm-ZY-MFC" secondAttribute="trailing" constant="16" id="owT-O0-1SF"/>
@@ -442,6 +445,9 @@
             <point key="canvasLocation" x="3523.0769230769229" y="-77.488151658767762"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wRq-VY-RGD"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <image name="camera.add.zoom" width="170" height="170"/>

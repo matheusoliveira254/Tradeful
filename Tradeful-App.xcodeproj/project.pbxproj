@@ -13,9 +13,11 @@
 		A12224862922EE78005CAD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12224842922EE78005CAD8E /* Main.storyboard */; };
 		A12224882922EE7A005CAD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12224872922EE7A005CAD8E /* Assets.xcassets */; };
 		A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12224892922EE7A005CAD8E /* LaunchScreen.storyboard */; };
-		A122249429240B37005CAD8E /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249329240B37005CAD8E /* HomeScreen.storyboard */; };
+		A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249329240B37005CAD8E /* HomeTab.storyboard */; };
 		A122249729240BAC005CAD8E /* FavoriteTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249529240BAC005CAD8E /* FavoriteTab.storyboard */; };
 		A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249829240C06005CAD8E /* SettingsTab.storyboard */; };
+		A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */; };
+		A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249C29258D3D005CAD8E /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,11 @@
 		A12224872922EE7A005CAD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A122248A2922EE7A005CAD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A122248C2922EE7A005CAD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A122249329240B37005CAD8E /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		A122249329240B37005CAD8E /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		A122249629240BAC005CAD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Tradeful-App/Base.lproj/FavoriteTab.storyboard"; sourceTree = "<group>"; };
 		A122249829240C06005CAD8E /* SettingsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsTab.storyboard; sourceTree = "<group>"; };
+		A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddListingScreen.storyboard; sourceTree = "<group>"; };
+		A122249C29258D3D005CAD8E /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				A12224922922F054005CAD8E /* Resources */,
 				A12224822922EE78005CAD8E /* ViewController.swift */,
 				A12224842922EE78005CAD8E /* Main.storyboard */,
-				A122249329240B37005CAD8E /* HomeScreen.storyboard */,
+				A122249329240B37005CAD8E /* HomeTab.storyboard */,
+				A122249C29258D3D005CAD8E /* LoginScreen.storyboard */,
+				A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */,
 				A122249529240BAC005CAD8E /* FavoriteTab.storyboard */,
 				A122249829240C06005CAD8E /* SettingsTab.storyboard */,
 			);
@@ -143,10 +149,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A122249729240BAC005CAD8E /* FavoriteTab.storyboard in Resources */,
+				A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */,
 				A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */,
 				A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */,
-				A122249429240B37005CAD8E /* HomeScreen.storyboard in Resources */,
+				A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */,
 				A12224882922EE7A005CAD8E /* Assets.xcassets in Resources */,
+				A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */,
 				A12224862922EE78005CAD8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1" y="-77"/>
         </scene>
-        <!--HomeScreen-->
+        <!--HomeTab-->
         <scene sceneID="nlm-bn-dF0">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeScreen" id="pF6-qv-YOv" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomeTab" id="pF6-qv-YOv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="GjQ-ps-ssI"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6s-0U-IWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -55,11 +55,11 @@
             </objects>
             <point key="canvasLocation" x="582" y="768"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="c81-TC-WAd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1rk-Ef-rvq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="shy-JU-rhl"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="shy-JU-rhl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1i-c5-Z50">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -74,11 +74,11 @@
             </objects>
             <point key="canvasLocation" x="756.92307692307691" y="-77.488151658767762"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="eec-NZ-QbS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m0T-cr-TCI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="AFg-PX-t7I"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="AFg-PX-t7I"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9NU-wg-Nuh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKj-4n-fxD">
@@ -94,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="1088" y="655"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="gQe-Zc-Ukz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VUt-tq-w1b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Y4U-JX-cfE"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="Y4U-JX-cfE"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rga-NX-JGK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVB-1t-YEB">
@@ -115,4 +115,9 @@
             <point key="canvasLocation" x="0.0" y="768"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+    </resources>
 </document>
