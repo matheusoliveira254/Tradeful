@@ -12,7 +12,7 @@
         <!--Tradeful-->
         <scene sceneID="o0F-kO-Mip">
             <objects>
-                <collectionViewController id="J19-Lr-J0X" sceneMemberID="viewController">
+                <collectionViewController id="J19-Lr-J0X" customClass="HomeListingCollectionViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TGc-my-elp">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sLs-Mr-w9a">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sLs-Mr-w9a" customClass="HomeListingCollectionViewCell" customModule="Tradeful_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wD3-xM-Vog">
