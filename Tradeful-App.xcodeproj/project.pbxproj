@@ -18,10 +18,16 @@
 		A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249829240C06005CAD8E /* SettingsTab.storyboard */; };
 		A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */; };
 		A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249C29258D3D005CAD8E /* LoginScreen.storyboard */; };
+		A13990F82932EB9F004F7A80 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A13990F72932EB9F004F7A80 /* FirebaseAuth */; };
+		A13990FA2932EB9F004F7A80 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A13990F92932EB9F004F7A80 /* FirebaseAuthCombine-Community */; };
+		A13990FC2932EB9F004F7A80 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A13990FB2932EB9F004F7A80 /* FirebaseFirestore */; };
+		A13990FE2932EB9F004F7A80 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A13990FD2932EB9F004F7A80 /* FirebaseFirestoreSwift */; };
+		A13991002932EB9F004F7A80 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A13990FF2932EB9F004F7A80 /* FirebaseFunctions */; };
+		A13991022932EB9F004F7A80 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A13991012932EB9F004F7A80 /* FirebaseStorage */; };
+		A1494934292D3D510000FEB0 /* HomeListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */; };
 		A196223E292C257100D7DA65 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196223D292C257100D7DA65 /* Listing.swift */; };
 		A1962241292C3F6200D7DA65 /* HomeListingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */; };
 		A1962243292C3F8600D7DA65 /* HomeListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */; };
-		A1962245292C404700D7DA65 /* HomeListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962244292C404700D7DA65 /* HomeListingCollectionViewCell.swift */; };
 		A1962248292C40F000D7DA65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962247292C40F000D7DA65 /* LoginViewModel.swift */; };
 		A196224B292C413600D7DA65 /* AddListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196224A292C413600D7DA65 /* AddListingViewModel.swift */; };
 		A196224D292C419500D7DA65 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196224C292C419500D7DA65 /* AddListingViewController.swift */; };
@@ -30,6 +36,15 @@
 		A1962255292C429500D7DA65 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962254292C429500D7DA65 /* FavoriteViewModel.swift */; };
 		A1962258292C434B00D7DA65 /* SettingsTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */; };
 		A196225A292C438000D7DA65 /* SettingsTabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */; };
+		A1ACF306292EF41E006BFC52 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */; };
+		A1ACF308292EF468006BFC52 /* MyListings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF307292EF468006BFC52 /* MyListings.storyboard */; };
+		A1ACF30C292EF6AA006BFC52 /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */; };
+		A1ACF30F292EF7DE006BFC52 /* MyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */; };
+		A1ACF311292EF811006BFC52 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */; };
+		A1ACF313292EF88F006BFC52 /* MyListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */; };
+		A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */; };
+		A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */; };
+		A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +61,10 @@
 		A122249829240C06005CAD8E /* SettingsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsTab.storyboard; sourceTree = "<group>"; };
 		A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddListingScreen.storyboard; sourceTree = "<group>"; };
 		A122249C29258D3D005CAD8E /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A196223D292C257100D7DA65 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingCollectionViewController.swift; sourceTree = "<group>"; };
 		A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingViewModel.swift; sourceTree = "<group>"; };
-		A1962244292C404700D7DA65 /* HomeListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1962247292C40F000D7DA65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A196224A292C413600D7DA65 /* AddListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewModel.swift; sourceTree = "<group>"; };
 		A196224C292C419500D7DA65 /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +73,15 @@
 		A1962254292C429500D7DA65 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewModel.swift; sourceTree = "<group>"; };
 		A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabTableViewController.swift; sourceTree = "<group>"; };
+		A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
+		A1ACF307292EF468006BFC52 /* MyListings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListings.storyboard; sourceTree = "<group>"; };
+		A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewModel.swift; sourceTree = "<group>"; };
+		A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsViewModel.swift; sourceTree = "<group>"; };
+		A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +89,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13990F82932EB9F004F7A80 /* FirebaseAuth in Frameworks */,
+				A13990FA2932EB9F004F7A80 /* FirebaseAuthCombine-Community in Frameworks */,
+				A13991002932EB9F004F7A80 /* FirebaseFunctions in Frameworks */,
+				A13990FC2932EB9F004F7A80 /* FirebaseFirestore in Frameworks */,
+				A13990FE2932EB9F004F7A80 /* FirebaseFirestoreSwift in Frameworks */,
+				A13991022932EB9F004F7A80 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +150,7 @@
 				A122249329240B37005CAD8E /* HomeTab.storyboard */,
 				A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */,
 				A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */,
-				A1962244292C404700D7DA65 /* HomeListingCollectionViewCell.swift */,
+				A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */,
 			);
 			path = "Home Tab";
 			sourceTree = "<group>";
@@ -128,9 +158,10 @@
 		A1962246292C409E00D7DA65 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A12224822922EE78005CAD8E /* LoginViewController.swift */,
 				A122249C29258D3D005CAD8E /* LoginScreen.storyboard */,
 				A1962247292C40F000D7DA65 /* LoginViewModel.swift */,
+				A12224822922EE78005CAD8E /* LoginViewController.swift */,
+				A1ACF30D292EF6B6006BFC52 /* Create Account */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -170,8 +201,40 @@
 				A122249829240C06005CAD8E /* SettingsTab.storyboard */,
 				A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */,
 				A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */,
+				A1ACF309292EF4FF006BFC52 /* My Account */,
+				A1ACF30A292EF518006BFC52 /* My Listings */,
 			);
 			path = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		A1ACF309292EF4FF006BFC52 /* My Account */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */,
+				A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */,
+				A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */,
+			);
+			path = "My Account";
+			sourceTree = "<group>";
+		};
+		A1ACF30A292EF518006BFC52 /* My Listings */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF307292EF468006BFC52 /* MyListings.storyboard */,
+				A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */,
+				A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */,
+			);
+			path = "My Listings";
+			sourceTree = "<group>";
+		};
+		A1ACF30D292EF6B6006BFC52 /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */,
+				A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */,
+				A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */,
+			);
+			path = "Create Account";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +253,14 @@
 			dependencies = (
 			);
 			name = "Tradeful-App";
+			packageProductDependencies = (
+				A13990F72932EB9F004F7A80 /* FirebaseAuth */,
+				A13990F92932EB9F004F7A80 /* FirebaseAuthCombine-Community */,
+				A13990FB2932EB9F004F7A80 /* FirebaseFirestore */,
+				A13990FD2932EB9F004F7A80 /* FirebaseFirestoreSwift */,
+				A13990FF2932EB9F004F7A80 /* FirebaseFunctions */,
+				A13991012932EB9F004F7A80 /* FirebaseStorage */,
+			);
 			productName = "Tradeful-App";
 			productReference = A122247B2922EE78005CAD8E /* Tradeful-App.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +289,9 @@
 				Base,
 			);
 			mainGroup = A12224722922EE78005CAD8E;
+			packageReferences = (
+				A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A122247C2922EE78005CAD8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,8 +308,11 @@
 			files = (
 				A122249729240BAC005CAD8E /* FavoriteTab.storyboard in Resources */,
 				A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */,
+				A1ACF306292EF41E006BFC52 /* MyAccount.storyboard in Resources */,
 				A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */,
 				A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */,
+				A1ACF308292EF468006BFC52 /* MyListings.storyboard in Resources */,
+				A1ACF30C292EF6AA006BFC52 /* CreateAccount.storyboard in Resources */,
 				A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */,
 				A12224882922EE7A005CAD8E /* Assets.xcassets in Resources */,
 				A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */,
@@ -250,9 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */,
 				A1962253292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift in Sources */,
 				A1962258292C434B00D7DA65 /* SettingsTabViewModel.swift in Sources */,
+				A1ACF30F292EF7DE006BFC52 /* MyAccountViewModel.swift in Sources */,
 				A1962241292C3F6200D7DA65 /* HomeListingCollectionViewController.swift in Sources */,
+				A1494934292D3D510000FEB0 /* HomeListingCollectionViewCell.swift in Sources */,
+				A1ACF313292EF88F006BFC52 /* MyListingsViewModel.swift in Sources */,
 				A196225A292C438000D7DA65 /* SettingsTabTableViewController.swift in Sources */,
 				A1962251292C426200D7DA65 /* FavoriteTabCollectionViewController.swift in Sources */,
 				A12224832922EE78005CAD8E /* LoginViewController.swift in Sources */,
@@ -261,9 +342,11 @@
 				A1962248292C40F000D7DA65 /* LoginViewModel.swift in Sources */,
 				A196224D292C419500D7DA65 /* AddListingViewController.swift in Sources */,
 				A196223E292C257100D7DA65 /* Listing.swift in Sources */,
+				A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */,
 				A196224B292C413600D7DA65 /* AddListingViewModel.swift in Sources */,
+				A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */,
 				A12224812922EE78005CAD8E /* SceneDelegate.swift in Sources */,
-				A1962245292C404700D7DA65 /* HomeListingCollectionViewCell.swift in Sources */,
+				A1ACF311292EF811006BFC52 /* MyAccountViewController.swift in Sources */,
 				A1962255292C429500D7DA65 /* FavoriteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +573,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A13990F72932EB9F004F7A80 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A13990F92932EB9F004F7A80 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		A13990FB2932EB9F004F7A80 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A13990FD2932EB9F004F7A80 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A13990FF2932EB9F004F7A80 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		A13991012932EB9F004F7A80 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A13990F62932EB9F004F7A80 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A12224732922EE78005CAD8E /* Project object */;
 }

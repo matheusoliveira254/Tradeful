@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class AddListingsViewModel {
+    
+    
+}//End of class

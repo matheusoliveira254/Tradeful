@@ -11,6 +11,8 @@ private let reuseIdentifier = "Cell"
 
 class HomeListingCollectionViewController: UICollectionViewController {
 
+    @IBOutlet var MainFeedCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

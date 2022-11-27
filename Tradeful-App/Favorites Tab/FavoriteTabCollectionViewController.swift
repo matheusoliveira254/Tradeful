@@ -11,6 +11,8 @@ private let reuseIdentifier = "Cell"
 
 class FavoriteTabCollectionViewController: UICollectionViewController {
 
+    @IBOutlet var FavoritesFeedCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

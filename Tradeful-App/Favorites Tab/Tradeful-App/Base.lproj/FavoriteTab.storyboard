@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AoN-ri-aG1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ihl-BX-TVQ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Favorites-->
         <scene sceneID="rNw-g7-jPj">
             <objects>
-                <collectionViewController id="ZzY-lQ-A29" sceneMemberID="viewController">
+                <collectionViewController id="ZzY-lQ-A29" customClass="FavoriteTabCollectionViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="U8c-jt-bZc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="G60-0O-VUy">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favoriteListingCell" id="G60-0O-VUy" customClass="FavoriteTabCollectionViewCell" customModule="Tradeful_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WZo-Qh-cKa">
@@ -141,6 +141,19 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="390" height="516"/>
+                                <connections>
+                                    <outlet property="FavoriteListingDateLabel" destination="jg9-HR-Iah" id="mVM-3u-vae"/>
+                                    <outlet property="FavoriteListingImageImageView" destination="JDh-Ke-RZo" id="Rph-Vi-k2q"/>
+                                    <outlet property="FavoriteListingTitleLabel" destination="Exr-T1-gHb" id="oYl-vu-fzD"/>
+                                    <outlet property="FavoriteTabCategoryLabel" destination="BAj-O8-4cc" id="3an-nG-2uD"/>
+                                    <outlet property="FavoriteTabContactNameLabel" destination="TSy-X3-DmD" id="RN7-8m-IRa"/>
+                                    <outlet property="FavoriteTabContactNumberButton" destination="8BV-So-jo2" id="860-5L-rdB"/>
+                                    <outlet property="FavoriteTabDescriptionLabel" destination="2Ci-DB-9Pe" id="Zh9-1d-Uij"/>
+                                    <outlet property="FavoriteTabEmailButton" destination="1wb-dg-hSH" id="Fbk-Bf-Mzs"/>
+                                    <outlet property="FavoriteTabLocationLabel" destination="1HD-Xs-Jg5" id="oL1-ly-xqh"/>
+                                    <outlet property="FavoriteTabPageControl" destination="Hpk-0X-y42" id="5mH-Sc-Xqu"/>
+                                    <outlet property="FavoriteTabSaveButton" destination="jCf-Yf-r8f" id="I7D-qX-Vkx"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -149,30 +162,47 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Favorites" id="2aJ-Xj-jIS">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="TQH-iN-gSQ"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="TQH-iN-gSQ">
+                            <connections>
+                                <segue destination="aGQ-2z-o7H" kind="show" id="aEf-Ma-yZS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="FavoritesFeedCollectionView" destination="U8c-jt-bZc" id="zgm-EP-HVF"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9n-yc-pfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5381.538461538461" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="6309.2307692307686" y="-77.488151658767762"/>
+        </scene>
+        <!--AddLisitingScreen-->
+        <scene sceneID="EtV-RT-itu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddLisitingScreen" id="aGQ-2z-o7H" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qzZ-Sh-D0K"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qua-eU-R3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6906.9230769230771" y="-77.488151658767762"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5PZ-0U-rSW">
+        <scene sceneID="ylc-hn-3c6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AoN-ri-aG1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ihl-BX-TVQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qEl-hO-Hpu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k6N-Fp-gaz">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZzY-lQ-A29" kind="relationship" relationship="rootViewController" id="X0T-s1-t14"/>
+                        <segue destination="ZzY-lQ-A29" kind="relationship" relationship="rootViewController" id="79H-VP-IpJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cp1-80-epn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1U-QB-dwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4452.3076923076924" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="5380" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>

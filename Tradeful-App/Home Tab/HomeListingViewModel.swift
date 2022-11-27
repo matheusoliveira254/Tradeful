@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class HomeListingViewModel {
+    
+}//End of class

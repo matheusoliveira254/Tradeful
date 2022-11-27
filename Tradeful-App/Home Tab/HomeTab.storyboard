@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MrC-fn-gF1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hRh-oh-uwP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sLs-Mr-w9a" customClass="HomeListingCollectionViewCell" customModule="Tradeful_App" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeListingCell" id="sLs-Mr-w9a" customClass="HomeListingCollectionViewCell" customModule="Tradeful_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wD3-xM-Vog">
@@ -141,6 +141,19 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="390" height="516"/>
+                                <connections>
+                                    <outlet property="HomeListingDateLabel" destination="xPN-V4-ezS" id="XXw-KJ-sDl"/>
+                                    <outlet property="HomeListingImageImageView" destination="COj-6Q-vlq" id="ikH-41-hFX"/>
+                                    <outlet property="HomeListingTitleLabel" destination="YKn-pT-i5T" id="DWo-l8-hVr"/>
+                                    <outlet property="HomeTabCategoryLabel" destination="3Y0-Fj-Uly" id="KwN-j3-S3X"/>
+                                    <outlet property="HomeTabContactEmailButton" destination="Rgd-sD-LFe" id="Zik-3w-Avi"/>
+                                    <outlet property="HomeTabContactNameLabel" destination="mXN-bH-01N" id="2pj-SY-Zfm"/>
+                                    <outlet property="HomeTabContactNumberButton" destination="Ldr-7v-1GI" id="Djb-5y-Czt"/>
+                                    <outlet property="HomeTabDescriptionLabel" destination="qRK-ap-2IS" id="2GQ-cA-ukf"/>
+                                    <outlet property="HomeTabFavoriteButton" destination="ykh-Mb-KUA" id="sU1-dX-LRQ"/>
+                                    <outlet property="HomeTabListingLocationLabel" destination="igV-iD-KkZ" id="LpL-Ys-zIq"/>
+                                    <outlet property="HomeTabPageControl" destination="lpb-E7-6z7" id="1bF-Ux-qMW"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -160,28 +173,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="MainFeedCollectionView" destination="TGc-my-elp" id="OkR-3V-Rrk"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U99-ID-6kY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4452.3076923076924" y="-77.488151658767762"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="1P5-el-dbJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MrC-fn-gF1" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SwT-kQ-IK2">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="J19-Lr-J0X" kind="relationship" relationship="rootViewController" id="msJ-Be-Tt3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GUe-4A-GhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3523.0769230769229" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="5381.538461538461" y="-77.488151658767762"/>
         </scene>
         <!--AddListingScreen-->
         <scene sceneID="fc5-mg-QaV">
@@ -201,7 +199,25 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ku-Vh-DqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5343.0769230769229" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="6272.3076923076924" y="-77.488151658767762"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kf5-MG-f5d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hRh-oh-uwP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pPP-Fk-U0d">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J19-Lr-J0X" kind="relationship" relationship="rootViewController" id="7Ll-e3-iMH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCs-AV-TBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4452.3076923076924" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>
