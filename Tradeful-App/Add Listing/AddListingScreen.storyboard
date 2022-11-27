@@ -12,7 +12,7 @@
         <!--Tradeful-->
         <scene sceneID="UKt-LS-oQ3">
             <objects>
-                <viewController id="7hw-Ei-ZY9" sceneMemberID="viewController">
+                <viewController id="7hw-Ei-ZY9" customClass="AddListingViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lPu-1M-GUJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,12 +147,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tradeful" id="E3d-ER-7H3">
-                        <barButtonItem key="rightBarButtonItem" title="Add Listing" id="dJA-sS-VNc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add Listing" id="dJA-sS-VNc">
+                            <connections>
+                                <action selector="addListingButtonTapped:" destination="7hw-Ei-ZY9" id="Spi-9W-ncu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addListingCategorySegmentedControl" destination="fMt-dd-7Ja" id="dz6-lJ-XSq"/>
+                        <outlet property="addListingDescriptionTextView" destination="Nml-ft-8kC" id="5Kj-l9-pFm"/>
+                        <outlet property="addListingLocationTextField" destination="AhN-gP-qsI" id="hPE-P8-B3G"/>
+                        <outlet property="addListingTitleTextField" destination="9LR-66-6FE" id="kxe-pn-NgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q04-Ew-bWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6266.4122137404574" y="699.29577464788736"/>
+            <point key="canvasLocation" x="7193.1297709923665" y="699.29577464788736"/>
         </scene>
     </scenes>
     <resources>

@@ -60,6 +60,9 @@
                                             <rect key="frame" x="8" y="381" width="51" height="35"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                            <connections>
+                                                <action selector="homeTabFavoriteButtonTapped:" destination="sLs-Mr-w9a" eventType="touchUpInside" id="1os-WX-LU8"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="237" translatesAutoresizingMaskIntoConstraints="NO" id="RW0-fH-MLK">
                                             <rect key="frame" x="8" y="424" width="374" height="20.333333333333314"/>
@@ -94,11 +97,17 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="34.333333333333336"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="phone" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="homeTabContactPhoneButtonTapped:" destination="sLs-Mr-w9a" eventType="touchUpInside" id="o03-3L-5vQ"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-sD-LFe">
                                                             <rect key="frame" x="57.333333333333314" y="0.0" width="53" height="34.333333333333336"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="envelope" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="homeTabContactEmailButtonTapped:" destination="sLs-Mr-w9a" eventType="touchUpInside" id="TrR-lT-t2B"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -142,17 +151,17 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="390" height="516"/>
                                 <connections>
-                                    <outlet property="HomeListingDateLabel" destination="xPN-V4-ezS" id="XXw-KJ-sDl"/>
-                                    <outlet property="HomeListingImageImageView" destination="COj-6Q-vlq" id="ikH-41-hFX"/>
-                                    <outlet property="HomeListingTitleLabel" destination="YKn-pT-i5T" id="DWo-l8-hVr"/>
-                                    <outlet property="HomeTabCategoryLabel" destination="3Y0-Fj-Uly" id="KwN-j3-S3X"/>
                                     <outlet property="HomeTabContactEmailButton" destination="Rgd-sD-LFe" id="Zik-3w-Avi"/>
-                                    <outlet property="HomeTabContactNameLabel" destination="mXN-bH-01N" id="2pj-SY-Zfm"/>
                                     <outlet property="HomeTabContactNumberButton" destination="Ldr-7v-1GI" id="Djb-5y-Czt"/>
-                                    <outlet property="HomeTabDescriptionLabel" destination="qRK-ap-2IS" id="2GQ-cA-ukf"/>
-                                    <outlet property="HomeTabFavoriteButton" destination="ykh-Mb-KUA" id="sU1-dX-LRQ"/>
-                                    <outlet property="HomeTabListingLocationLabel" destination="igV-iD-KkZ" id="LpL-Ys-zIq"/>
-                                    <outlet property="HomeTabPageControl" destination="lpb-E7-6z7" id="1bF-Ux-qMW"/>
+                                    <outlet property="homeListingDateLabel" destination="xPN-V4-ezS" id="XXw-KJ-sDl"/>
+                                    <outlet property="homeListingImageImageView" destination="COj-6Q-vlq" id="ikH-41-hFX"/>
+                                    <outlet property="homeListingTitleLabel" destination="YKn-pT-i5T" id="DWo-l8-hVr"/>
+                                    <outlet property="homeTabCategoryLabel" destination="3Y0-Fj-Uly" id="KwN-j3-S3X"/>
+                                    <outlet property="homeTabContactNameLabel" destination="mXN-bH-01N" id="2pj-SY-Zfm"/>
+                                    <outlet property="homeTabDescriptionLabel" destination="qRK-ap-2IS" id="2GQ-cA-ukf"/>
+                                    <outlet property="homeTabFavoriteButton" destination="ykh-Mb-KUA" id="sU1-dX-LRQ"/>
+                                    <outlet property="homeTabListingLocationLabel" destination="igV-iD-KkZ" id="LpL-Ys-zIq"/>
+                                    <outlet property="homeTabPageControl" destination="lpb-E7-6z7" id="1bF-Ux-qMW"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -164,22 +173,24 @@
                     <navigationItem key="navigationItem" title="Tradeful" id="jx6-RY-WH8">
                         <barButtonItem key="leftBarButtonItem" title="Sign In" id="alh-DQ-zRN">
                             <connections>
+                                <action selector="signInBarButtonTapped:" destination="J19-Lr-J0X" id="pgm-rZ-0jo"/>
                                 <segue destination="24P-9n-sux" kind="show" identifier="toLoginScreenFromSignInBtn" id="1K0-q7-zoh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Wjd-Jb-BPN">
                             <connections>
+                                <action selector="addListingBarButtonHomeTabTapped:" destination="J19-Lr-J0X" id="Ynr-yf-hQc"/>
                                 <segue destination="2e8-JM-KLk" kind="show" id="wRq-VY-RGD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MainFeedCollectionView" destination="TGc-my-elp" id="OkR-3V-Rrk"/>
+                        <outlet property="mainFeedCollectionView" destination="TGc-my-elp" id="OkR-3V-Rrk"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U99-ID-6kY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5381.538461538461" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="7238.4615384615381" y="-77.488151658767762"/>
         </scene>
         <!--AddListingScreen-->
         <scene sceneID="fc5-mg-QaV">
@@ -199,7 +210,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ku-Vh-DqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6082" y="-77"/>
+            <point key="canvasLocation" x="7940" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>

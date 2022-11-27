@@ -9,6 +9,16 @@ import UIKit
 
 class MyAccountViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    
+    @IBOutlet weak var myAccountNameTextField: UITextField!
+    @IBOutlet weak var myAccountLocationTextField: UITextField!
+    @IBOutlet weak var myAccountEmailTextField: UITextField!
+    @IBOutlet weak var myAccountNewPasswordTextField: UITextField!
+    @IBOutlet weak var myAccountConfirmPasswordTextField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +35,8 @@ class MyAccountViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //MARK: - IBAction
+    @IBAction func myAccountUpdateBarButton(_ sender: UIBarButtonItem) {
+    }
 }

@@ -9,6 +9,14 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    
+    @IBOutlet weak var createAccountNameTextField: UITextField!
+    @IBOutlet weak var createAccountLocationTextField: UITextField!
+    @IBOutlet weak var createAccountEmailTextField: UITextField!
+    @IBOutlet weak var createAccountNewPasswordTextField: UITextField!
+    @IBOutlet weak var createAccountConfirmPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +34,9 @@ class CreateAccountViewController: UIViewController {
     }
     */
 
+    //MARK: - IBAction
+    
+    @IBAction func createAccountCreateButtonTapped(_ sender: UIBarButtonItem) {
+    }
+    
 }

@@ -9,16 +9,23 @@ import UIKit
 
 class HomeListingCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var HomeListingTitleLabel: UILabel!
-    @IBOutlet weak var HomeListingDateLabel: UILabel!
-    @IBOutlet weak var HomeListingImageImageView: UIImageView!
-    @IBOutlet weak var HomeTabFavoriteButton: UIButton!
-    @IBOutlet weak var HomeTabPageControl: UIPageControl!
-    @IBOutlet weak var HomeTabListingLocationLabel: UILabel!
-    @IBOutlet weak var HomeTabCategoryLabel: UILabel!
-    @IBOutlet weak var HomeTabContactNameLabel: UILabel!
-    @IBOutlet weak var HomeTabContactNumberButton: UIButton!
-    @IBOutlet weak var HomeTabContactEmailButton: UIButton!
-    @IBOutlet weak var HomeTabDescriptionLabel: UILabel!
+    //MARK: - IBOutlet
+    @IBOutlet weak var homeListingTitleLabel: UILabel!
+    @IBOutlet weak var homeListingDateLabel: UILabel!
+    @IBOutlet weak var homeListingImageImageView: UIImageView!
+    @IBOutlet weak var homeTabFavoriteButton: UIButton!
+    @IBOutlet weak var homeTabPageControl: UIPageControl!
+    @IBOutlet weak var homeTabListingLocationLabel: UILabel!
+    @IBOutlet weak var homeTabCategoryLabel: UILabel!
+    @IBOutlet weak var homeTabContactNameLabel: UILabel!
+    @IBOutlet weak var homeTabDescriptionLabel: UILabel!
 
+    //MARK: - IBAction
+    
+    @IBAction func homeTabFavoriteButtonTapped(_ sender: UIButton) {
+    }
+    @IBAction func homeTabContactPhoneButtonTapped(_ sender: UIButton) {
+    }
+    @IBAction func homeTabContactEmailButtonTapped(_ sender: UIButton) {
+    }
 }

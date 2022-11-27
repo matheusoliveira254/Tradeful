@@ -1,17 +1,19 @@
 //
-//  HomeListingsCollectionViewController.swift
+//  MyListingsCollectionViewController.swift
 //  Tradeful-App
 //
-//  Created by Matheus Oliveira on 11/21/22.
+//  Created by Matheus Oliveira on 11/26/22.
 //
 
 import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class HomeListingCollectionViewController: UICollectionViewController {
+class MyListingsCollectionViewController: UICollectionViewController {
 
-    @IBOutlet var mainFeedCollectionView: UICollectionView!
+    //MARK: - IBOutlets
+    
+    @IBOutlet var myListingsCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,11 +88,8 @@ class HomeListingCollectionViewController: UICollectionViewController {
     
     }
     */
-    
+
     //MARK: - IBAction
-    
-    @IBAction func signInBarButtonTapped(_ sender: Any) {
-    }
-    @IBAction func addListingBarButtonHomeTabTapped(_ sender: UIBarButtonItem) {
+    @IBAction func addListingButtonMyListingsScreenTapped(_ sender: UIBarButtonItem) {
     }
 }

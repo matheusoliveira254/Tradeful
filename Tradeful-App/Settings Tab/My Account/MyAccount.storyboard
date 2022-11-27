@@ -11,7 +11,7 @@
         <!--Account Management-->
         <scene sceneID="dLd-aq-N6n">
             <objects>
-                <viewController id="QWI-me-h3G" sceneMemberID="viewController">
+                <viewController id="QWI-me-h3G" customClass="MyAccountViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w0i-pc-zl6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,12 +108,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Account Management" id="up5-vk-dNS">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="dY0-ab-VIV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="dY0-ab-VIV">
+                            <connections>
+                                <action selector="MyAccountUpdateBarButton:" destination="QWI-me-h3G" id="JoL-aI-60I"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="myAccountConfirmPasswordTextField" destination="2Jx-12-DnJ" id="TV6-uO-PJI"/>
+                        <outlet property="myAccountEmailTextField" destination="Y6e-qt-Qpc" id="i11-4U-HY7"/>
+                        <outlet property="myAccountLocationTextField" destination="swn-aU-D3R" id="bnH-Rc-2Kg"/>
+                        <outlet property="myAccountNameTextField" destination="7Df-OZ-cea" id="40W-ge-Ybs"/>
+                        <outlet property="myAccountNewPasswordTextField" destination="P5M-Zv-lOT" id="AU1-uZ-wmw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYO-m4-b4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3619.0839694656488" y="684.50704225352115"/>
+            <point key="canvasLocation" x="4545.801526717557" y="684.50704225352115"/>
         </scene>
     </scenes>
     <resources>

@@ -9,18 +9,20 @@ import UIKit
 
 class FavoriteTabCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var FavoriteListingTitleLabel: UILabel!
-    @IBOutlet weak var FavoriteListingDateLabel: UILabel!
-    @IBOutlet weak var FavoriteListingImageImageView: UIImageView!
-    @IBOutlet weak var FavoriteTabSaveButton: UIButton!
-    @IBOutlet weak var FavoriteTabPageControl: UIPageControl!
-    @IBOutlet weak var FavoriteTabLocationLabel: UILabel!
-    @IBOutlet weak var FavoriteTabCategoryLabel: UILabel!
-    @IBOutlet weak var FavoriteTabContactNameLabel: UILabel!
-    @IBOutlet weak var FavoriteTabContactNumberButton: UIButton!
-    @IBOutlet weak var FavoriteTabEmailButton: UIButton!
+    //MARK: - IBOutlet
+    @IBOutlet weak var favoriteListingTitleLabel: UILabel!
+    @IBOutlet weak var favoriteListingDateLabel: UILabel!
+    @IBOutlet weak var favoriteListingImageImageView: UIImageView!
+    @IBOutlet weak var favoriteTabSaveButton: UIButton!
+    @IBOutlet weak var favoriteTabPageControl: UIPageControl!
+    @IBOutlet weak var favoriteTabLocationLabel: UILabel!
+    @IBOutlet weak var favoriteTabCategoryLabel: UILabel!
+    @IBOutlet weak var favoriteTabContactNameLabel: UILabel!
     @IBOutlet weak var FavoriteTabDescriptionLabel: UILabel!
     
+    //MARK: - IBAction
     
-    
+    @IBOutlet weak var favoriteTabSaveButtonTapped: UIButton!
+    @IBOutlet weak var favoriteTabContactNumberButtonTapped: UIButton!
+    @IBOutlet weak var favoriteTabContactEmailButtonTapped: UIButton!
 }

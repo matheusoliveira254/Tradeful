@@ -9,6 +9,12 @@ import UIKit
 
 class AddListingViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    @IBOutlet weak var addListingTitleTextField: UITextField!
+    @IBOutlet weak var addListingLocationTextField: UITextField!
+    @IBOutlet weak var addListingCategorySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var addListingDescriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +31,8 @@ class AddListingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //MARK: - IBAction
+    @IBAction func addListingButtonTapped(_ sender: UIBarButtonItem) {
+    }
 }

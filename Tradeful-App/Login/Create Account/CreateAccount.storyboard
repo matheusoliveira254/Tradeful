@@ -11,7 +11,7 @@
         <!--Create Account-->
         <scene sceneID="bhC-gv-Kjz">
             <objects>
-                <viewController id="5jF-u4-F92" sceneMemberID="viewController">
+                <viewController id="5jF-u4-F92" customClass="CreateAccountViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5F-WO-x9v">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,12 +108,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" id="ZsU-PM-DcM">
-                        <barButtonItem key="rightBarButtonItem" title="Create" id="5rP-dA-o2z"/>
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="5rP-dA-o2z">
+                            <connections>
+                                <action selector="createAccountCreateButtonTapped:" destination="5jF-u4-F92" id="pxq-ww-akV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="createAccountConfirmPasswordTextField" destination="Ycn-QW-Fi3" id="lLm-fC-8p5"/>
+                        <outlet property="createAccountEmailTextField" destination="S6W-JV-Q02" id="Pwg-Bz-5Ol"/>
+                        <outlet property="createAccountLocationTextField" destination="JLR-UM-smM" id="XUZ-tA-aSH"/>
+                        <outlet property="createAccountNameTextField" destination="yCw-Iu-fBi" id="lDU-Cx-OVU"/>
+                        <outlet property="createAccountNewPasswordTextField" destination="ugt-Ea-SpL" id="dNb-Sq-KQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbO-LP-0zj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9061.8320610687024" y="-77.464788732394368"/>
+            <point key="canvasLocation" x="9988.5496183206105" y="-77.464788732394368"/>
         </scene>
     </scenes>
     <resources>

@@ -39,6 +39,7 @@
 		A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */; };
 		A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */; };
 		A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */; };
+		A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				A1ACF307292EF468006BFC52 /* MyListings.storyboard */,
 				A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */,
+				A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */,
 				A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */,
 			);
 			path = "My Listings";
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */,
+				A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */,
 				A1962253292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift in Sources */,
 				A1962258292C434B00D7DA65 /* SettingsTabViewModel.swift in Sources */,
 				A1ACF30F292EF7DE006BFC52 /* MyAccountViewModel.swift in Sources */,

@@ -87,4 +87,8 @@ class FavoriteTabCollectionViewController: UICollectionViewController {
     }
     */
 
+    //MARK: - IBAction
+    
+    @IBAction func AddListingBarButtonFavoriteTabTapped(_ sender: UIBarButtonItem) {
+    }
 }

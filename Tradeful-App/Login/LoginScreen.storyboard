@@ -11,7 +11,7 @@
         <!--Login-->
         <scene sceneID="eyN-Xh-75C">
             <objects>
-                <viewController id="QFp-LJ-JKR" sceneMemberID="viewController">
+                <viewController id="QFp-LJ-JKR" customClass="LoginViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Itj-Aq-qKU">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,6 +73,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="loginScreenSignInButton:" destination="QFp-LJ-JKR" eventType="touchUpInside" id="25S-o0-vdX"/>
                                     <segue destination="2e8-JM-KLk" kind="show" identifier="toAddListingSignIn" id="OPe-sD-51A"/>
                                 </connections>
                             </button>
@@ -87,6 +88,9 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginScreenSingInWithAppleButton:" destination="QFp-LJ-JKR" eventType="touchUpInside" id="OnD-xT-0BQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP0-xO-TMV">
                                 <rect key="frame" x="56" y="458.33333333333331" width="278" height="44"/>
@@ -96,6 +100,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Not Registered? Sign Up Here"/>
                                 <connections>
+                                    <action selector="loginScreenRegisterButton:" destination="QFp-LJ-JKR" eventType="touchUpInside" id="bDu-OQ-FbO"/>
                                     <segue destination="0mH-Y2-yZk" kind="show" id="ROU-vb-cED"/>
                                 </connections>
                             </button>
@@ -121,10 +126,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="z4x-YB-drC"/>
+                    <connections>
+                        <outlet property="loginScreenPasswordTextField" destination="9RZ-VX-glc" id="t4C-dz-ih4"/>
+                        <outlet property="loginScreenUsernameTextField" destination="ZsL-xb-HWj" id="LAM-nC-GaL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCQ-VJ-Vd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7201.538461538461" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="8130.7692307692305" y="-77.488151658767762"/>
         </scene>
         <!--AddListingScreen-->
         <scene sceneID="fc5-mg-QaV">
@@ -144,7 +153,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpX-NO-Yfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8137.6923076923076" y="-77.488151658767762"/>
+            <point key="canvasLocation" x="9066.9230769230762" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>
