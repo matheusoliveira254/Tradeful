@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="41P-c1-sEF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QFp-LJ-JKR">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OYH-ub-bHd">
-                                <rect key="frame" x="16" y="191" width="358" height="63.666666666666657"/>
+                                <rect key="frame" x="16" y="147" width="358" height="63.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJh-9i-1ae">
                                         <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="21.666666666666668"/>
@@ -40,7 +40,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-UQ-Vcg">
-                                <rect key="frame" x="16" y="274.66666666666669" width="358" height="63.666666666666686"/>
+                                <rect key="frame" x="16" y="230.66666666666666" width="358" height="63.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="src-fQ-PoD">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="21.666666666666668"/>
@@ -49,7 +49,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9RZ-VX-glc">
-                                        <rect key="frame" x="0.0" y="29.666666666666629" width="358" height="34"/>
+                                        <rect key="frame" x="0.0" y="29.666666666666657" width="358" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -63,7 +63,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdG-dr-E3x">
-                                <rect key="frame" x="56" y="374.33333333333331" width="278" height="44"/>
+                                <rect key="frame" x="56" y="330.33333333333331" width="278" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="r0e-l0-TaO"/>
                                 </constraints>
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-ta-FaS">
-                                <rect key="frame" x="56" y="438.33333333333331" width="278" height="44"/>
+                                <rect key="frame" x="56" y="394.33333333333331" width="278" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ng0-tf-isv"/>
                                 </constraints>
@@ -89,7 +89,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP0-xO-TMV">
-                                <rect key="frame" x="56" y="502.33333333333326" width="278" height="44"/>
+                                <rect key="frame" x="56" y="458.33333333333331" width="278" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="hMh-ll-aaM"/>
                                 </constraints>
@@ -134,7 +134,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLE-7Z-bV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5385" y="348"/>
+            <point key="canvasLocation" x="7202" y="345"/>
         </scene>
         <!--CreateAccount-->
         <scene sceneID="ikG-Ic-ozm">
@@ -145,24 +145,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpX-NO-Yfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8137.6923076923076" y="-77.488151658767762"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9xJ-VM-2eH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="41P-c1-sEF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="haB-XW-Qox">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QFp-LJ-JKR" kind="relationship" relationship="rootViewController" id="RnP-m3-ffz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XXo-Qh-6m7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6272.3076923076924" y="-77.488151658767762"/>
         </scene>
     </scenes>
     <resources>
