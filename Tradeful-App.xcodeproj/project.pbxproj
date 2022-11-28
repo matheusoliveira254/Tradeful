@@ -9,21 +9,81 @@
 /* Begin PBXBuildFile section */
 		A122247F2922EE78005CAD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A122247E2922EE78005CAD8E /* AppDelegate.swift */; };
 		A12224812922EE78005CAD8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12224802922EE78005CAD8E /* SceneDelegate.swift */; };
-		A12224832922EE78005CAD8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12224822922EE78005CAD8E /* ViewController.swift */; };
+		A12224832922EE78005CAD8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12224822922EE78005CAD8E /* LoginViewController.swift */; };
 		A12224862922EE78005CAD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12224842922EE78005CAD8E /* Main.storyboard */; };
 		A12224882922EE7A005CAD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12224872922EE7A005CAD8E /* Assets.xcassets */; };
 		A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12224892922EE7A005CAD8E /* LaunchScreen.storyboard */; };
+		A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249329240B37005CAD8E /* HomeTab.storyboard */; };
+		A122249729240BAC005CAD8E /* FavoriteTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249529240BAC005CAD8E /* FavoriteTab.storyboard */; };
+		A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249829240C06005CAD8E /* SettingsTab.storyboard */; };
+		A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */; };
+		A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A122249C29258D3D005CAD8E /* LoginScreen.storyboard */; };
+		A1494934292D3D510000FEB0 /* HomeListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */; };
+		A196223E292C257100D7DA65 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196223D292C257100D7DA65 /* Listing.swift */; };
+		A1962241292C3F6200D7DA65 /* HomeListingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */; };
+		A1962243292C3F8600D7DA65 /* HomeListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */; };
+		A1962248292C40F000D7DA65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962247292C40F000D7DA65 /* LoginViewModel.swift */; };
+		A196224B292C413600D7DA65 /* AddListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196224A292C413600D7DA65 /* AddListingViewModel.swift */; };
+		A196224D292C419500D7DA65 /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A196224C292C419500D7DA65 /* AddListingViewController.swift */; };
+		A1962251292C426200D7DA65 /* FavoriteTabCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962250292C426200D7DA65 /* FavoriteTabCollectionViewController.swift */; };
+		A1962253292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962252292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift */; };
+		A1962255292C429500D7DA65 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962254292C429500D7DA65 /* FavoriteViewModel.swift */; };
+		A1962258292C434B00D7DA65 /* SettingsTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */; };
+		A196225A292C438000D7DA65 /* SettingsTabTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */; };
+		A1ACF306292EF41E006BFC52 /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */; };
+		A1ACF308292EF468006BFC52 /* MyListings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF307292EF468006BFC52 /* MyListings.storyboard */; };
+		A1ACF30C292EF6AA006BFC52 /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */; };
+		A1ACF30F292EF7DE006BFC52 /* MyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */; };
+		A1ACF311292EF811006BFC52 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */; };
+		A1ACF313292EF88F006BFC52 /* MyListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */; };
+		A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */; };
+		A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */; };
+		A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */; };
+		A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */; };
+		A1BE5D9E29352F55002EFFFB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5D9D29352F55002EFFFB /* FirebaseAuth */; };
+		A1BE5DA029352F55002EFFFB /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5D9F29352F55002EFFFB /* FirebaseAuthCombine-Community */; };
+		A1BE5DA229352F55002EFFFB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA129352F55002EFFFB /* FirebaseFirestore */; };
+		A1BE5DA429352F55002EFFFB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA329352F55002EFFFB /* FirebaseFirestoreSwift */; };
+		A1BE5DA629352F55002EFFFB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA529352F55002EFFFB /* FirebaseFunctions */; };
+		A1BE5DA829352F55002EFFFB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA729352F55002EFFFB /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A122247B2922EE78005CAD8E /* Tradeful-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tradeful-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A122247E2922EE78005CAD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A12224802922EE78005CAD8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A12224822922EE78005CAD8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A12224822922EE78005CAD8E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A12224852922EE78005CAD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A12224872922EE7A005CAD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A122248A2922EE7A005CAD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A122248C2922EE7A005CAD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A122249329240B37005CAD8E /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		A122249629240BAC005CAD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Tradeful-App/Base.lproj/FavoriteTab.storyboard"; sourceTree = "<group>"; };
+		A122249829240C06005CAD8E /* SettingsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsTab.storyboard; sourceTree = "<group>"; };
+		A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddListingScreen.storyboard; sourceTree = "<group>"; };
+		A122249C29258D3D005CAD8E /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A196223D292C257100D7DA65 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingCollectionViewController.swift; sourceTree = "<group>"; };
+		A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListingViewModel.swift; sourceTree = "<group>"; };
+		A1962247292C40F000D7DA65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A196224A292C413600D7DA65 /* AddListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewModel.swift; sourceTree = "<group>"; };
+		A196224C292C419500D7DA65 /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
+		A1962250292C426200D7DA65 /* FavoriteTabCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabCollectionViewController.swift; sourceTree = "<group>"; };
+		A1962252292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1962254292C429500D7DA65 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewModel.swift; sourceTree = "<group>"; };
+		A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabTableViewController.swift; sourceTree = "<group>"; };
+		A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
+		A1ACF307292EF468006BFC52 /* MyListings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyListings.storyboard; sourceTree = "<group>"; };
+		A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewModel.swift; sourceTree = "<group>"; };
+		A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsViewModel.swift; sourceTree = "<group>"; };
+		A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BE5D9E29352F55002EFFFB /* FirebaseAuth in Frameworks */,
+				A1BE5DA029352F55002EFFFB /* FirebaseAuthCombine-Community in Frameworks */,
+				A1BE5DA629352F55002EFFFB /* FirebaseFunctions in Frameworks */,
+				A1BE5DA229352F55002EFFFB /* FirebaseFirestore in Frameworks */,
+				A1BE5DA429352F55002EFFFB /* FirebaseFirestoreSwift in Frameworks */,
+				A1BE5DA829352F55002EFFFB /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				A12224922922F054005CAD8E /* Resources */,
-				A12224822922EE78005CAD8E /* ViewController.swift */,
-				A12224842922EE78005CAD8E /* Main.storyboard */,
+				A196224E292C41BC00D7DA65 /* Model */,
+				A196223F292C3EC400D7DA65 /* Home Tab */,
+				A196224F292C41F000D7DA65 /* Favorites Tab */,
+				A1962256292C42A300D7DA65 /* Settings Tab */,
+				A1962246292C409E00D7DA65 /* Login */,
+				A1962249292C411C00D7DA65 /* Add Listing */,
 			);
 			path = "Tradeful-App";
 			sourceTree = "<group>";
@@ -73,6 +143,101 @@
 				A122248C2922EE7A005CAD8E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A196223F292C3EC400D7DA65 /* Home Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A12224842922EE78005CAD8E /* Main.storyboard */,
+				A122249329240B37005CAD8E /* HomeTab.storyboard */,
+				A1962242292C3F8500D7DA65 /* HomeListingViewModel.swift */,
+				A1962240292C3F6200D7DA65 /* HomeListingCollectionViewController.swift */,
+				A1494933292D3D510000FEB0 /* HomeListingCollectionViewCell.swift */,
+			);
+			path = "Home Tab";
+			sourceTree = "<group>";
+		};
+		A1962246292C409E00D7DA65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A122249C29258D3D005CAD8E /* LoginScreen.storyboard */,
+				A1962247292C40F000D7DA65 /* LoginViewModel.swift */,
+				A12224822922EE78005CAD8E /* LoginViewController.swift */,
+				A1ACF30D292EF6B6006BFC52 /* Create Account */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A1962249292C411C00D7DA65 /* Add Listing */ = {
+			isa = PBXGroup;
+			children = (
+				A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */,
+				A196224A292C413600D7DA65 /* AddListingViewModel.swift */,
+				A196224C292C419500D7DA65 /* AddListingViewController.swift */,
+			);
+			path = "Add Listing";
+			sourceTree = "<group>";
+		};
+		A196224E292C41BC00D7DA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A196223D292C257100D7DA65 /* Listing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A196224F292C41F000D7DA65 /* Favorites Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A122249529240BAC005CAD8E /* FavoriteTab.storyboard */,
+				A1962254292C429500D7DA65 /* FavoriteViewModel.swift */,
+				A1962250292C426200D7DA65 /* FavoriteTabCollectionViewController.swift */,
+				A1962252292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift */,
+			);
+			path = "Favorites Tab";
+			sourceTree = "<group>";
+		};
+		A1962256292C42A300D7DA65 /* Settings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A122249829240C06005CAD8E /* SettingsTab.storyboard */,
+				A1962257292C434B00D7DA65 /* SettingsTabViewModel.swift */,
+				A1962259292C438000D7DA65 /* SettingsTabTableViewController.swift */,
+				A1ACF309292EF4FF006BFC52 /* My Account */,
+				A1ACF30A292EF518006BFC52 /* My Listings */,
+			);
+			path = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		A1ACF309292EF4FF006BFC52 /* My Account */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF305292EF41E006BFC52 /* MyAccount.storyboard */,
+				A1ACF30E292EF7DD006BFC52 /* MyAccountViewModel.swift */,
+				A1ACF310292EF811006BFC52 /* MyAccountViewController.swift */,
+			);
+			path = "My Account";
+			sourceTree = "<group>";
+		};
+		A1ACF30A292EF518006BFC52 /* My Listings */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF307292EF468006BFC52 /* MyListings.storyboard */,
+				A1ACF312292EF88F006BFC52 /* MyListingsViewModel.swift */,
+				A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */,
+				A1ACF314292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift */,
+			);
+			path = "My Listings";
+			sourceTree = "<group>";
+		};
+		A1ACF30D292EF6B6006BFC52 /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACF30B292EF6AA006BFC52 /* CreateAccount.storyboard */,
+				A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */,
+				A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */,
+			);
+			path = "Create Account";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +256,14 @@
 			dependencies = (
 			);
 			name = "Tradeful-App";
+			packageProductDependencies = (
+				A1BE5D9D29352F55002EFFFB /* FirebaseAuth */,
+				A1BE5D9F29352F55002EFFFB /* FirebaseAuthCombine-Community */,
+				A1BE5DA129352F55002EFFFB /* FirebaseFirestore */,
+				A1BE5DA329352F55002EFFFB /* FirebaseFirestoreSwift */,
+				A1BE5DA529352F55002EFFFB /* FirebaseFunctions */,
+				A1BE5DA729352F55002EFFFB /* FirebaseStorage */,
+			);
 			productName = "Tradeful-App";
 			productReference = A122247B2922EE78005CAD8E /* Tradeful-App.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +292,9 @@
 				Base,
 			);
 			mainGroup = A12224722922EE78005CAD8E;
+			packageReferences = (
+				A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A122247C2922EE78005CAD8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,8 +309,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A122249729240BAC005CAD8E /* FavoriteTab.storyboard in Resources */,
+				A122249B29258CDD005CAD8E /* AddListingScreen.storyboard in Resources */,
+				A1ACF306292EF41E006BFC52 /* MyAccount.storyboard in Resources */,
+				A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */,
 				A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */,
+				A1ACF308292EF468006BFC52 /* MyListings.storyboard in Resources */,
+				A1ACF30C292EF6AA006BFC52 /* CreateAccount.storyboard in Resources */,
+				A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */,
 				A12224882922EE7A005CAD8E /* Assets.xcassets in Resources */,
+				A122249D29258D3D005CAD8E /* LoginScreen.storyboard in Resources */,
 				A12224862922EE78005CAD8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +330,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12224832922EE78005CAD8E /* ViewController.swift in Sources */,
+				A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */,
+				A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */,
+				A1962253292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift in Sources */,
+				A1962258292C434B00D7DA65 /* SettingsTabViewModel.swift in Sources */,
+				A1ACF30F292EF7DE006BFC52 /* MyAccountViewModel.swift in Sources */,
+				A1962241292C3F6200D7DA65 /* HomeListingCollectionViewController.swift in Sources */,
+				A1494934292D3D510000FEB0 /* HomeListingCollectionViewCell.swift in Sources */,
+				A1ACF313292EF88F006BFC52 /* MyListingsViewModel.swift in Sources */,
+				A196225A292C438000D7DA65 /* SettingsTabTableViewController.swift in Sources */,
+				A1962251292C426200D7DA65 /* FavoriteTabCollectionViewController.swift in Sources */,
+				A12224832922EE78005CAD8E /* LoginViewController.swift in Sources */,
+				A1962243292C3F8600D7DA65 /* HomeListingViewModel.swift in Sources */,
 				A122247F2922EE78005CAD8E /* AppDelegate.swift in Sources */,
+				A1962248292C40F000D7DA65 /* LoginViewModel.swift in Sources */,
+				A196224D292C419500D7DA65 /* AddListingViewController.swift in Sources */,
+				A196223E292C257100D7DA65 /* Listing.swift in Sources */,
+				A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */,
+				A196224B292C413600D7DA65 /* AddListingViewModel.swift in Sources */,
+				A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */,
 				A12224812922EE78005CAD8E /* SceneDelegate.swift in Sources */,
+				A1ACF311292EF811006BFC52 /* MyAccountViewController.swift in Sources */,
+				A1962255292C429500D7DA65 /* FavoriteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +372,14 @@
 				A122248A2922EE7A005CAD8E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A122249529240BAC005CAD8E /* FavoriteTab.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A122249629240BAC005CAD8E /* Base */,
+			);
+			name = FavoriteTab.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,6 +577,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1BE5D9D29352F55002EFFFB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A1BE5D9F29352F55002EFFFB /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		A1BE5DA129352F55002EFFFB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A1BE5DA329352F55002EFFFB /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A1BE5DA529352F55002EFFFB /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		A1BE5DA729352F55002EFFFB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1BE5D9C29352F55002EFFFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A12224732922EE78005CAD8E /* Project object */;
 }
