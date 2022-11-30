@@ -46,6 +46,7 @@
 		A1BE5DA429352F55002EFFFB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA329352F55002EFFFB /* FirebaseFirestoreSwift */; };
 		A1BE5DA629352F55002EFFFB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA529352F55002EFFFB /* FirebaseFunctions */; };
 		A1BE5DA829352F55002EFFFB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA729352F55002EFFFB /* FirebaseStorage */; };
+		A1BE5DAD2935702D002EFFFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1BE5DAC2935702D002EFFFB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		A1ACF316292EF8E4006BFC52 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewController.swift; sourceTree = "<group>"; };
+		A1BE5DAC2935702D002EFFFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		A12224722922EE78005CAD8E = {
 			isa = PBXGroup;
 			children = (
+				A1BE5DAC2935702D002EFFFB /* GoogleService-Info.plist */,
 				A122247D2922EE78005CAD8E /* Tradeful-App */,
 				A122247C2922EE78005CAD8E /* Products */,
 			);
@@ -314,6 +317,7 @@
 				A1ACF306292EF41E006BFC52 /* MyAccount.storyboard in Resources */,
 				A122249929240C06005CAD8E /* SettingsTab.storyboard in Resources */,
 				A122248B2922EE7A005CAD8E /* LaunchScreen.storyboard in Resources */,
+				A1BE5DAD2935702D002EFFFB /* GoogleService-Info.plist in Resources */,
 				A1ACF308292EF468006BFC52 /* MyListings.storyboard in Resources */,
 				A1ACF30C292EF6AA006BFC52 /* CreateAccount.storyboard in Resources */,
 				A122249429240B37005CAD8E /* HomeTab.storyboard in Resources */,

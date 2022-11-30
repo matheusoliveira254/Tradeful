@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uD-BQ-Zjd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uD-BQ-Zjd">
                                 <rect key="frame" x="16" y="85" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -25,9 +25,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Profile Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCw-Iu-fBi">
                                 <rect key="frame" x="16" y="116" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="751-sG-34s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="751-sG-34s">
                                 <rect key="frame" x="16" y="267" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -36,20 +36,20 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6W-JV-Q02">
                                 <rect key="frame" x="16" y="298" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-wD-N3D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-wD-N3D">
                                 <rect key="frame" x="16" y="358" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugt-Ea-SpL">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone Number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugt-Ea-SpL">
                                 <rect key="frame" x="16" y="389" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location (City, State and Zip)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-m5-d0l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location (City, State and Zip)*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-m5-d0l">
                                 <rect key="frame" x="16" y="176" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -58,9 +58,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City, State and Zipcode..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLR-UM-smM">
                                 <rect key="frame" x="16" y="207" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level1+2"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9I-q4-qSb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9I-q4-qSb">
                                 <rect key="frame" x="16" y="449" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -69,7 +69,18 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ycn-QW-Fi3">
                                 <rect key="frame" x="16" y="480" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-Wq-JhB">
+                                <rect key="frame" x="16" y="540" width="361" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter New Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ye-Dn-yPM">
+                                <rect key="frame" x="16" y="571" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AXF-Lx-5dW"/>
@@ -79,7 +90,9 @@
                             <constraint firstItem="751-sG-34s" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="3RD-sf-2oz"/>
                             <constraint firstItem="8uD-BQ-Zjd" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="438-wy-o7F"/>
                             <constraint firstItem="ugt-Ea-SpL" firstAttribute="top" secondItem="YAf-wD-N3D" secondAttribute="bottom" constant="8" symbolic="YES" id="7eM-kn-qV2"/>
+                            <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="SnH-Wq-JhB" secondAttribute="trailing" constant="16" id="91W-wJ-HCc"/>
                             <constraint firstItem="Ycn-QW-Fi3" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="95X-ee-aPa"/>
+                            <constraint firstItem="SnH-Wq-JhB" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="BL8-qh-NfC"/>
                             <constraint firstItem="uXf-m5-d0l" firstAttribute="top" secondItem="yCw-Iu-fBi" secondAttribute="bottom" constant="26" id="CNH-TO-GiC"/>
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="YAf-wD-N3D" secondAttribute="trailing" constant="16" id="D43-ot-Keq"/>
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="JLR-UM-smM" secondAttribute="trailing" constant="16" id="E7g-Fd-tk5"/>
@@ -92,6 +105,9 @@
                             <constraint firstItem="JLR-UM-smM" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="W2Q-vn-Qg4"/>
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="w9I-q4-qSb" secondAttribute="trailing" constant="16" id="W47-q9-QXu"/>
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="S6W-JV-Q02" secondAttribute="trailing" constant="16" id="WlG-75-sns"/>
+                            <constraint firstItem="8ye-Dn-yPM" firstAttribute="top" secondItem="SnH-Wq-JhB" secondAttribute="bottom" constant="8" symbolic="YES" id="cAF-02-1cm"/>
+                            <constraint firstItem="SnH-Wq-JhB" firstAttribute="top" secondItem="Ycn-QW-Fi3" secondAttribute="bottom" constant="26" id="dsN-nb-lbS"/>
+                            <constraint firstItem="8ye-Dn-yPM" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="gUG-RP-CSw"/>
                             <constraint firstItem="yCw-Iu-fBi" firstAttribute="top" secondItem="8uD-BQ-Zjd" secondAttribute="bottom" constant="8" symbolic="YES" id="gmo-iM-gbO"/>
                             <constraint firstItem="S6W-JV-Q02" firstAttribute="top" secondItem="751-sG-34s" secondAttribute="bottom" constant="8" symbolic="YES" id="h2F-d5-R9x"/>
                             <constraint firstItem="Ycn-QW-Fi3" firstAttribute="top" secondItem="w9I-q4-qSb" secondAttribute="bottom" constant="8" symbolic="YES" id="mIL-DV-I38"/>
@@ -100,11 +116,13 @@
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="ugt-Ea-SpL" secondAttribute="trailing" constant="16" id="npO-fj-G0g"/>
                             <constraint firstItem="751-sG-34s" firstAttribute="top" secondItem="JLR-UM-smM" secondAttribute="bottom" constant="26" id="qz4-5T-RVG"/>
                             <constraint firstItem="ugt-Ea-SpL" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="rTA-Fh-72N"/>
+                            <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="8ye-Dn-yPM" secondAttribute="trailing" constant="16" id="riC-2O-0tv"/>
                             <constraint firstItem="JLR-UM-smM" firstAttribute="top" secondItem="uXf-m5-d0l" secondAttribute="bottom" constant="8" symbolic="YES" id="tRw-vC-Klx"/>
                             <constraint firstItem="yCw-Iu-fBi" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="vMA-gB-jyj"/>
                             <constraint firstItem="AXF-Lx-5dW" firstAttribute="trailing" secondItem="Ycn-QW-Fi3" secondAttribute="trailing" constant="16" id="wiQ-iN-TyP"/>
                             <constraint firstItem="uXf-m5-d0l" firstAttribute="leading" secondItem="AXF-Lx-5dW" secondAttribute="leading" constant="16" id="wu5-7j-Rla"/>
                             <constraint firstItem="8uD-BQ-Zjd" firstAttribute="top" secondItem="AXF-Lx-5dW" secondAttribute="top" constant="26" id="x4i-ew-VWr"/>
+                            <constraint firstItem="8ye-Dn-yPM" firstAttribute="top" secondItem="SnH-Wq-JhB" secondAttribute="bottom" constant="8" symbolic="YES" id="xP2-Wj-mjU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account" id="ZsU-PM-DcM">
@@ -115,11 +133,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="createAccountConfirmPasswordTextField" destination="Ycn-QW-Fi3" id="lLm-fC-8p5"/>
+                        <outlet property="createAccountConfirmPasswordTextField" destination="8ye-Dn-yPM" id="4zP-Du-NUr"/>
                         <outlet property="createAccountEmailTextField" destination="S6W-JV-Q02" id="Pwg-Bz-5Ol"/>
                         <outlet property="createAccountLocationTextField" destination="JLR-UM-smM" id="XUZ-tA-aSH"/>
                         <outlet property="createAccountNameTextField" destination="yCw-Iu-fBi" id="lDU-Cx-OVU"/>
-                        <outlet property="createAccountNewPasswordTextField" destination="ugt-Ea-SpL" id="dNb-Sq-KQa"/>
+                        <outlet property="createAccountNewPasswordTextField" destination="Ycn-QW-Fi3" id="snw-mk-COw"/>
+                        <outlet property="createAccountPhoneNumberTextField" destination="ugt-Ea-SpL" id="mpr-ht-oeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbO-LP-0zj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

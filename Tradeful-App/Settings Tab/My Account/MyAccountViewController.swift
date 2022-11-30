@@ -14,6 +14,8 @@ class MyAccountViewController: UIViewController {
     @IBOutlet weak var myAccountNameTextField: UITextField!
     @IBOutlet weak var myAccountLocationTextField: UITextField!
     @IBOutlet weak var myAccountEmailTextField: UITextField!
+    
+    @IBOutlet weak var myAccountPhoneNumberTextField: UITextField!
     @IBOutlet weak var myAccountNewPasswordTextField: UITextField!
     @IBOutlet weak var myAccountConfirmPasswordTextField: UITextField!
     
