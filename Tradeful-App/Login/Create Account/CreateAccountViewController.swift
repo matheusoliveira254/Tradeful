@@ -53,6 +53,10 @@ class CreateAccountViewController: UIViewController {
                 FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
                     if let error {
                         print(error)
+                        let missingFieldAlertController = UIAlertController(title: "Missing Field", message: "Please fill all required fields.", preferredStyle: .alert)
+                        let dismissAction = UIAlertAction(title: "Ok", style: .default)
+                        missingFieldAlertController.addAction(dismissAction)
+                        self?.present(missingFieldAlertController, animated: true)
                         return
                     }
                     
@@ -66,15 +70,9 @@ class CreateAccountViewController: UIViewController {
                     guard let storyboardViewController = storyboard.instantiateViewController(withIdentifier: "home") as? HomeListingCollectionViewController else {return}
                     self?.navigationController?.pushViewController(storyboardViewController, animated: true)
                 }
-            } else {
-                let missingFieldAlertController = UIAlertController(title: "Missing Field", message: "Please fill all required fields.", preferredStyle: .alert)
-                let dismissAction = UIAlertAction(title: "Ok", style: .default)
-                missingFieldAlertController.addAction(dismissAction)
-                self.present(missingFieldAlertController, animated: true)
-                return
             }
         } else {
-            let passwordNotMatchingAlertController = UIAlertController(title: "Password are not matching!", message: "Please make sure passwords match.", preferredStyle: .alert)
+            let passwordNotMatchingAlertController = UIAlertController(title: "Password Invalid.", message: "Please make sure passwords match.", preferredStyle: .alert)
             let passwordDismissAction = UIAlertAction(title: "Ok", style: .default)
             passwordNotMatchingAlertController.addAction(passwordDismissAction)
             self.present(passwordNotMatchingAlertController, animated: true)
