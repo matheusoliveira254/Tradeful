@@ -47,6 +47,10 @@
 		A1BE5DA629352F55002EFFFB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA529352F55002EFFFB /* FirebaseFunctions */; };
 		A1BE5DA829352F55002EFFFB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A1BE5DA729352F55002EFFFB /* FirebaseStorage */; };
 		A1BE5DAD2935702D002EFFFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1BE5DAC2935702D002EFFFB /* GoogleService-Info.plist */; };
+		A1BE5DAF293824C3002EFFFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DAE293824C3002EFFFB /* User.swift */; };
+		A1BE5DB129391818002EFFFB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB029391818002EFFFB /* FirebaseService.swift */; };
+		A1BE5DB32939183D002EFFFB /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB22939183D002EFFFB /* DateHelper.swift */; };
+		A1BE5DB6293AADCB002EFFFB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB5293AADCB002EFFFB /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A1BE5D9A2932FED3002EFFFB /* MyListingsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsCollectionViewController.swift; sourceTree = "<group>"; };
 		A1BE5DAC2935702D002EFFFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1BE5DAE293824C3002EFFFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1BE5DB029391818002EFFFB /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		A1BE5DB22939183D002EFFFB /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		A1BE5DB5293AADCB002EFFFB /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				A12224922922F054005CAD8E /* Resources */,
+				A1BE5DB429391844002EFFFB /* Helper Files */,
 				A196224E292C41BC00D7DA65 /* Model */,
 				A196223F292C3EC400D7DA65 /* Home Tab */,
 				A196224F292C41F000D7DA65 /* Favorites Tab */,
@@ -185,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				A196223D292C257100D7DA65 /* Listing.swift */,
+				A1BE5DAE293824C3002EFFFB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +251,16 @@
 				A1ACF318292EF8FE006BFC52 /* CreateAccountViewController.swift */,
 			);
 			path = "Create Account";
+			sourceTree = "<group>";
+		};
+		A1BE5DB429391844002EFFFB /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1BE5DB029391818002EFFFB /* FirebaseService.swift */,
+				A1BE5DB22939183D002EFFFB /* DateHelper.swift */,
+				A1BE5DB5293AADCB002EFFFB /* Errors.swift */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BE5DB32939183D002EFFFB /* DateHelper.swift in Sources */,
 				A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */,
 				A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */,
 				A1962253292C427600D7DA65 /* FavoriteTabCollectionViewCell.swift in Sources */,
@@ -349,13 +370,16 @@
 				A122247F2922EE78005CAD8E /* AppDelegate.swift in Sources */,
 				A1962248292C40F000D7DA65 /* LoginViewModel.swift in Sources */,
 				A196224D292C419500D7DA65 /* AddListingViewController.swift in Sources */,
+				A1BE5DB6293AADCB002EFFFB /* Errors.swift in Sources */,
 				A196223E292C257100D7DA65 /* Listing.swift in Sources */,
+				A1BE5DB129391818002EFFFB /* FirebaseService.swift in Sources */,
 				A1ACF315292EF8B6006BFC52 /* MyListingsCollectionViewCell.swift in Sources */,
 				A196224B292C413600D7DA65 /* AddListingViewModel.swift in Sources */,
 				A1ACF317292EF8E4006BFC52 /* CreateAccountViewModel.swift in Sources */,
 				A12224812922EE78005CAD8E /* SceneDelegate.swift in Sources */,
 				A1ACF311292EF811006BFC52 /* MyAccountViewController.swift in Sources */,
 				A1962255292C429500D7DA65 /* FavoriteViewModel.swift in Sources */,
+				A1BE5DAF293824C3002EFFFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
