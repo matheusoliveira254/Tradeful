@@ -94,8 +94,8 @@
             filePath = "Tradeful-App/Login/Create Account/CreateAccountViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "createUser(name:location:email:phoneNumber:password:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,13 +110,13 @@
             filePath = "Tradeful-App/Login/Create Account/CreateAccountViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "createUser(name:location:email:phoneNumber:password:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "5364AB58-8501-45E7-8EE1-AE6FC8371625 - a014252a0a3e5d17"
+                  uuid = "5364AB58-8501-45E7-8EE1-AE6FC8371625 - a014252a0a3e5d76"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -126,12 +126,12 @@
                   urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Login/Create%20Account/CreateAccountViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
                   offsetFromSymbolStart = "1575">
                </Location>
                <Location
-                  uuid = "5364AB58-8501-45E7-8EE1-AE6FC8371625 - 1da02256ac426223"
+                  uuid = "5364AB58-8501-45E7-8EE1-AE6FC8371625 - 1da02256ac4262c2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -141,8 +141,8 @@
                   urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Login/Create%20Account/CreateAccountViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "134">
                </Location>
             </Locations>
@@ -174,13 +174,13 @@
             filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "saveUserToFirebase(with:firestoreUid:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7A1FDEAD-D0DC-422D-B120-ADA38B67963F - 9e6742869eca6b4e"
+                  uuid = "7A1FDEAD-D0DC-422D-B120-ADA38B67963F - 9e6742869eca6b6f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -190,12 +190,12 @@
                   urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
                   offsetFromSymbolStart = "109">
                </Location>
                <Location
-                  uuid = "7A1FDEAD-D0DC-422D-B120-ADA38B67963F - 8a434741c4041920"
+                  uuid = "7A1FDEAD-D0DC-422D-B120-ADA38B67963F - 8a434741c4041ac3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -205,8 +205,8 @@
                   urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "97">
                </Location>
             </Locations>
@@ -222,8 +222,8 @@
             filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "saveUserToFirebase(with:firestoreUid:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "Tradeful-App/Login/Create Account/CreateAccountViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "createUser(name:location:email:phoneNumber:password:)"
             landmarkType = "7">
          </BreakpointContent>

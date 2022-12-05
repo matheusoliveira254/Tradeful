@@ -42,6 +42,7 @@ struct FirebaseService: FirebaseSyncable {
                     completion(.failure(.firebaseError(error)))
                 case .success(let success):
                     UserDefaults.standard.set(true, forKey: "signedInWithFirebase")
+//                    UserDefaults.standard.set(firestoreUser.uid, forKey: "uid")
                     completion(.success(success))
                 }
             }
@@ -61,4 +62,6 @@ struct FirebaseService: FirebaseSyncable {
     func deleteUser(user: User){
         ref.collection(User.Key.user).document(user.uuid).delete()
     }
+    
+    
 }//End of struct

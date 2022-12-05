@@ -24,7 +24,6 @@ class CreateAccountViewModel {
         self.service = service
     }
     
-    //Todo: Add completion Handler
     //create a user and store user input into a user object
     func createUser(name: String, location: String, email: String, phoneNumber: String, password: String) {
         if name != "" && location != "" && email != "" && phoneNumber != "" && password != "" {

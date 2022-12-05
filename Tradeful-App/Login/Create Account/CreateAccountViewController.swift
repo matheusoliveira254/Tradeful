@@ -53,9 +53,6 @@ class CreateAccountViewController: UIViewController {
         
         if password == confirmPassword {
             viewModel.createUser(name: name, location: location, email: email, phoneNumber: phoneNumber, password: password)
-//            let storyboard = UIStoryboard(name: "HomeTab", bundle: nil)
-//            guard let storyboardViewController = storyboard.instantiateViewController(withIdentifier: "home") as? HomeListingCollectionViewController else {return}
-//            self.navigationController?.pushViewController(storyboardViewController, animated: true)
         } else {
             let passwordNotMatchingAlertController = UIAlertController(title: "Password Invalid.", message: "Please make sure passwords match.", preferredStyle: .alert)
             let passwordDismissAction = UIAlertAction(title: "Ok", style: .default)
@@ -74,7 +71,7 @@ extension CreateAccountViewController: CreateAccountViewModelDelegate {
     }
     
     func encountered(error: Error?) {
-        let missingFieldAlertController = UIAlertController(title: "There was an error.", message: error?.localizedDescription.debugDescription ?? "Please make sure all required fields are filled properly.", preferredStyle: .alert)
+        let missingFieldAlertController = UIAlertController(title: "There was an error.", message: error?.localizedDescription.description ?? "Please make sure all required fields are filled properly.", preferredStyle: .alert)
         let dismissAction = UIAlertAction(title: "Ok", style: .default)
         missingFieldAlertController.addAction(dismissAction)
         self.present(missingFieldAlertController, animated: true)
