@@ -31,6 +31,7 @@ class CreateAccountViewModel {
             service.createFirestoreUser(newUser: user) { result in
                 switch result {
                 case .failure(let error):
+                    
                     self.delegate?.encountered(error: error)
                 case .success(let _):
                     self.delegate?.userSignedIn()
@@ -41,3 +42,4 @@ class CreateAccountViewModel {
         }
     }
 }//End of class
+

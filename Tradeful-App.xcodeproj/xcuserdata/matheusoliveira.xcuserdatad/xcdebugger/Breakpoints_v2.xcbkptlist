@@ -238,9 +238,217 @@
             filePath = "Tradeful-App/Login/Create Account/CreateAccountViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "createUser(name:location:email:phoneNumber:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3623B6B2-B8F3-48E5-A7D4-0705549E9A97"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3623B6B2-B8F3-48E5-A7D4-0705549E9A97 - ed6409e076ee53c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "83">
+               </Location>
+               <Location
+                  uuid = "3623B6B2-B8F3-48E5-A7D4-0705549E9A97 - 4e2b9569567d09bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "215">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C3A3E32-7AA6-42AB-92BD-3407228A1F70"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4C3A3E32-7AA6-42AB-92BD-3407228A1F70 - 4e2b9569567d09bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "215">
+               </Location>
+               <Location
+                  uuid = "4C3A3E32-7AA6-42AB-92BD-3407228A1F70 - 4e2b9569567d09bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "243">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB56A56C-F98A-4B1F-BD31-9DF35E1F9BB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97A6C1E3-1AC0-4AF6-8968-A451891DC624"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC2569A9-6AF8-4591-ABF5-77D64F930317"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC2569A9-6AF8-4591-ABF5-77D64F930317 - 4e2b9569567d0ef1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "795">
+               </Location>
+               <Location
+                  uuid = "DC2569A9-6AF8-4591-ABF5-77D64F930317 - acbbece89e9ca9bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Tradeful_App.FirebaseService.createFirestoreUser(newUser: Tradeful_App.User, completion: (Swift.Result&lt;Swift.Bool, Tradeful_App.FirebaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Tradeful-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusoliveira/Developer/Stateful/Unit%208/Tradeful-App/Tradeful-App/Helper%20Files/FirebaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "147">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB33F979-5263-45B2-B010-A39B2602ACBC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "createUser(name:location:email:phoneNumber:password:)"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19F6FDCF-2E90-45D7-81F3-62F4A1BF6C8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tradeful-App/Helper Files/FirebaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "createFirestoreUser(newUser:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

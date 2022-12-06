@@ -28,10 +28,10 @@ struct FirebaseService: FirebaseSyncable {
     //This is creating the user to Firebase but not saving the data
     func createFirestoreUser(newUser: User, completion: @escaping (Result<Bool, FirebaseError>) -> Void) {
         
-        Auth.auth().createUser(withEmail: newUser.email, password: newUser.password) { authResult, error in
-            if let error {
-                print(error)
-                completion(.failure(.firebaseError(error)))
+        Auth.auth().createUser(withEmail: newUser.email, password: newUser.password) { authResult, authError in
+            if let authError {
+                print(authError)
+                completion(.failure(.firebaseError(authError)))
             }
             
             guard let firestoreUser = authResult?.user else {return}
