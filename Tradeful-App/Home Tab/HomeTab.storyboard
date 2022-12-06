@@ -12,7 +12,7 @@
         <!--Tradeful-->
         <scene sceneID="o0F-kO-Mip">
             <objects>
-                <collectionViewController id="J19-Lr-J0X" customClass="HomeListingCollectionViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="home" id="J19-Lr-J0X" customClass="HomeListingCollectionViewController" customModule="Tradeful_App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TGc-my-elp">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

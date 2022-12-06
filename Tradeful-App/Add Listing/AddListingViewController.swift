@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AddListingViewController: UIViewController {
 
@@ -23,12 +24,11 @@ class AddListingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        handle = Auth.auth().addStateDidChangeListener { auth, user in
+        let handle = Auth.auth().addStateDidChangeListener { auth, user in
             
-//        }
+        }
     }
     
-
     /*
     // MARK: - Navigation
 
