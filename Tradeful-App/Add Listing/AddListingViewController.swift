@@ -16,6 +16,21 @@ class AddListingViewController: UIViewController {
     @IBOutlet weak var addListingCategorySegmentedControl: UISegmentedControl!
     @IBOutlet weak var addListingDescriptionTextView: UITextView!
     
+    var category: String {
+        switch addListingCategorySegmentedControl.selectedSegmentIndex {
+        case 0:
+            return "Home"
+        case 1:
+            return "Sporting"
+        case 2:
+            return "Electronics"
+        case 3:
+            return "Vehicles"
+        default:
+            return "Other"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,5 +56,22 @@ class AddListingViewController: UIViewController {
     
     //MARK: - IBAction
     @IBAction func addListingButtonTapped(_ sender: UIBarButtonItem) {
+        
+//        guard let
+    }
+}//End of class
+
+extension AddListingViewController: AddListingsViewModelDelegate {
+    func postedListingSuccessfully() {
+        let storyboard = UIStoryboard(name: "HomeTab", bundle: nil)
+        guard let storyboardViewController = storyboard.instantiateViewController(withIdentifier: "home") as? HomeListingCollectionViewController else {return}
+        self.navigationController?.pushViewController(storyboardViewController, animated: true)
+    }
+    
+    func encountered(error: Error?) {
+        let missingFieldAlertController = UIAlertController(title: "There was an error.", message: error?.localizedDescription.description ?? "Please make sure all required fields are filled properly.", preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: "Ok", style: .default)
+        missingFieldAlertController.addAction(dismissAction)
+        self.present(missingFieldAlertController, animated: true)
     }
 }

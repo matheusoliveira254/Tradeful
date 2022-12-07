@@ -20,6 +20,7 @@ protocol FirebaseSyncable {
     func saveUserToFirebase(with user: User, firestoreUid: String, completion: @escaping (Result<Bool, FirebaseError>) -> Void)
     func createFirestoreUser(newUser: User, completion: @escaping (Result<Bool, FirebaseError>) -> Void)
     func deleteUser(user: User)
+    func saveListingToFirestore(with listing: Listing, firestoreUid: String, completion: @escaping (Result<Bool, FirebaseError>) -> Void)
 }
 
 struct FirebaseService: FirebaseSyncable {
@@ -27,7 +28,6 @@ struct FirebaseService: FirebaseSyncable {
     
     //This is creating the user to Firebase but not saving the data
     func createFirestoreUser(newUser: User, completion: @escaping (Result<Bool, FirebaseError>) -> Void) {
-        
         Auth.auth().createUser(withEmail: newUser.email, password: newUser.password) { authResult, authError in
             if let authError {
                 print(authError)
@@ -42,7 +42,7 @@ struct FirebaseService: FirebaseSyncable {
                     completion(.failure(.firebaseError(error)))
                 case .success(let success):
                     UserDefaults.standard.set(true, forKey: "signedInWithFirebase")
-//                    UserDefaults.standard.set(firestoreUser.uid, forKey: "uid")
+                    UserDefaults.standard.set(firestoreUser.uid, forKey: "uid")
                     completion(.success(success))
                 }
             }
@@ -63,5 +63,13 @@ struct FirebaseService: FirebaseSyncable {
         ref.collection(User.Key.user).document(user.uuid).delete()
     }
     
-    
+    func saveListingToFirestore(with listing: Listing, firestoreUid: String, completion: @escaping (Result<Bool, FirebaseError>) -> Void) {
+        ref.collection(Listing.Key.listing).document(firestoreUid).setData(listing.listingData) { error in
+            if let error = error {
+                print(error)
+                completion(.failure(.firebaseError(error)))
+            }
+            completion(.success(true))
+        }
+    }
 }//End of struct
