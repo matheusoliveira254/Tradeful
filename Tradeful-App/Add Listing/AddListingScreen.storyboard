@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwm-ZY-MFC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos(Max of 10)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwm-ZY-MFC">
                                 <rect key="frame" x="16" y="59" width="361" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -36,7 +36,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GoC-Nh-IA6">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addListingPhotoCell" id="GoC-Nh-IA6" customClass="AddListingPhotoCollectionViewCell" customModule="Tradeful_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="7.666666666666667" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HbW-tf-SRB">
@@ -55,6 +55,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="addListingPhotoImageView" destination="2te-dd-K4w" id="dnb-vF-ogr"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -157,6 +160,7 @@
                         <outlet property="addListingCategorySegmentedControl" destination="fMt-dd-7Ja" id="dz6-lJ-XSq"/>
                         <outlet property="addListingDescriptionTextView" destination="Nml-ft-8kC" id="5Kj-l9-pFm"/>
                         <outlet property="addListingLocationTextField" destination="AhN-gP-qsI" id="hPE-P8-B3G"/>
+                        <outlet property="addListingPhotosCollectionView" destination="d8M-e2-P7j" id="E6x-hK-BAk"/>
                         <outlet property="addListingTitleTextField" destination="9LR-66-6FE" id="kxe-pn-NgG"/>
                     </connections>
                 </viewController>

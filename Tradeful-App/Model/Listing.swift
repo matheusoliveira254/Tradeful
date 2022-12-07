@@ -11,52 +11,43 @@ class Listing {
     
     enum Key {
         static let listing = "listings"
+        static let myListings = "myListings"
+        static let favorites = "favorites"
         static let title = "title"
-        static let location = "location"
-        static let listingsPhotos = "photos"
-        static let userName = "userName"
-        static let email = "email"
-        static let phoneNumber = "phone"
+//        static let listingsPhotos = "photos"
         static let description = "description"
         static let date = "date"
         static let category = "category"
-        static let uuid = "uuid"
+        static let userUid = "userUid"
+        static let listingUid = "listingUid"
     }
     
     var title: String
-    var location: String
-    var listingsPhotos: [String]
-    var userName: String
-    var email: String
-    var phoneNumber: String
+//    var listingsPhotos: [String]
     var description: String
     var date: Date
     var category: String
-    var uuid: String
+    var userUid: String
+    var listingUid = "listingUid"
     
     var listingData: [String:AnyHashable] {
         [Key.title: self.title,
-         Key.location: self.location,
-         Key.listingsPhotos: self.listingsPhotos,
-         Key.userName: self.userName,
-         Key.email: self.email,
-         Key.phoneNumber: self.phoneNumber,
+//         Key.listingsPhotos: self.listingsPhotos,
          Key.description: self.description,
          Key.date: self.date,
          Key.category: self.category,
-         Key.uuid: self.uuid]
+         Key.userUid: self.userUid,
+         Key.listingUid: self.listingUid
+        ]
     }
     
-    init(title: String, location: String, listingsPhotos: [String], userName: String, email: String, phoneNumber: String, description: String, date: Date = Date(), category: String, uuid: String) {
+    init(title: String, description: String, date: Date = Date(), category: String, userUid: String, listingUid: String = UUID().uuidString) {
         self.title = title
-        self.location = location
-        self.listingsPhotos = listingsPhotos
-        self.userName = userName
-        self.email = email
-        self.phoneNumber = phoneNumber
+//        self.listingsPhotos = listingsPhotos
         self.description = description
         self.date = date
         self.category = category
-        self.uuid = uuid
+        self.userUid = userUid
+        self.listingUid = listingUid
     }
 }//End of struct

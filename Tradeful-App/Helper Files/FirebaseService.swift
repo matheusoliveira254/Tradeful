@@ -64,7 +64,7 @@ struct FirebaseService: FirebaseSyncable {
     }
     
     func saveListingToFirestore(with listing: Listing, firestoreUid: String, completion: @escaping (Result<Bool, FirebaseError>) -> Void) {
-        ref.collection(Listing.Key.listing).document(firestoreUid).setData(listing.listingData) { error in
+        ref.collection(Listing.Key.listing).document(firestoreUid).collection(Listing.Key.myListings).document(listing.title).setData(listing.listingData) { error in
             if let error = error {
                 print(error)
                 completion(.failure(.firebaseError(error)))

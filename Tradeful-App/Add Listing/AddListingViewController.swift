@@ -15,8 +15,11 @@ class AddListingViewController: UIViewController {
     @IBOutlet weak var addListingLocationTextField: UITextField!
     @IBOutlet weak var addListingCategorySegmentedControl: UISegmentedControl!
     @IBOutlet weak var addListingDescriptionTextView: UITextView!
+    @IBOutlet weak var addListingPhotosCollectionView: UICollectionView!
     
-    var category: String {
+    private var viewModel: AddListingsViewModel!
+    
+    var category: String? {
         switch addListingCategorySegmentedControl.selectedSegmentIndex {
         case 0:
             return "Home"
@@ -26,22 +29,24 @@ class AddListingViewController: UIViewController {
             return "Electronics"
         case 3:
             return "Vehicles"
-        default:
+        case 4:
             return "Other"
+        default:
+            return "Home"
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = AddListingsViewModel(delegate: self)
+//        addListingPhotosCollectionView.delegate = self
+//        addListingPhotosCollectionView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let handle = Auth.auth().addStateDidChangeListener { auth, user in
-            
-        }
     }
     
     /*
@@ -57,9 +62,28 @@ class AddListingViewController: UIViewController {
     //MARK: - IBAction
     @IBAction func addListingButtonTapped(_ sender: UIBarButtonItem) {
         
-//        guard let
+        guard let title = addListingTitleTextField.text,
+              let location = addListingLocationTextField.text,
+              let category = category,
+              let description = addListingDescriptionTextView.text else {return}
+        
+        viewModel.createListing(title: title, location: location, description: description, category: category, userUid: UserDefaults.standard.value(forKey: "uid") as! String)
+        
+        postedListingSuccessfully()
     }
 }//End of class
+
+//extension AddListingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        10
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addListingPhotoCell", for: indexPath) as? UIColle
+//
+//        return cell
+//    }
+//}
 
 extension AddListingViewController: AddListingsViewModelDelegate {
     func postedListingSuccessfully() {

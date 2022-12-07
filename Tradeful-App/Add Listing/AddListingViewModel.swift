@@ -22,10 +22,10 @@ class AddListingsViewModel {
         self.service = service
     }
     
-    func createListing(title: String, location: String, listingsPhotos: [String], userName: String, email: String, phoneNumber: String, description: String, category: String, uuid: String) {
-        if title != "" && location != "" && userName != "" && email != "" && phoneNumber != "" && description != "" && category != "" && uuid != "" {
-            let listing = Listing(title: title, location: location, listingsPhotos: listingsPhotos, userName: userName, email: email, phoneNumber: phoneNumber, description: description, category: category, uuid: uuid)
-            service.saveListingToFirestore(with: listing, firestoreUid: UserDefaults.standard.value(forKey: "uid") as! String) { result in
+    func createListing(title: String, location: String, description: String, category: String, userUid: String) {
+        if title != "" && location != "" && description != "" && category != "" && userUid != "" {
+            let listing = Listing(title: title, description: description, category: category, userUid: userUid)
+            service.saveListingToFirestore(with: listing, firestoreUid: userUid) { result in
                 switch result {
                 case .failure(let error):
                     self.delegate?.encountered(error: error)

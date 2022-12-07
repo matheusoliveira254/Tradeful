@@ -51,6 +51,7 @@
 		A1BE5DB129391818002EFFFB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB029391818002EFFFB /* FirebaseService.swift */; };
 		A1BE5DB32939183D002EFFFB /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB22939183D002EFFFB /* DateHelper.swift */; };
 		A1BE5DB6293AADCB002EFFFB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB5293AADCB002EFFFB /* Errors.swift */; };
+		A1BE5DB829412737002EFFFB /* AddListingPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE5DB729412737002EFFFB /* AddListingPhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		A1BE5DB029391818002EFFFB /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		A1BE5DB22939183D002EFFFB /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		A1BE5DB5293AADCB002EFFFB /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A1BE5DB729412737002EFFFB /* AddListingPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				A122249A29258CDD005CAD8E /* AddListingScreen.storyboard */,
 				A196224A292C413600D7DA65 /* AddListingViewModel.swift */,
 				A196224C292C419500D7DA65 /* AddListingViewController.swift */,
+				A1BE5DB729412737002EFFFB /* AddListingPhotoCollectionViewCell.swift */,
 			);
 			path = "Add Listing";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BE5DB829412737002EFFFB /* AddListingPhotoCollectionViewCell.swift in Sources */,
 				A1BE5DB32939183D002EFFFB /* DateHelper.swift in Sources */,
 				A1ACF319292EF8FE006BFC52 /* CreateAccountViewController.swift in Sources */,
 				A1BE5D9B2932FED3002EFFFB /* MyListingsCollectionViewController.swift in Sources */,
