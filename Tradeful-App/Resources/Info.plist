@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Tradeful to access camera and photo library?</string>
 </dict>
 </plist>

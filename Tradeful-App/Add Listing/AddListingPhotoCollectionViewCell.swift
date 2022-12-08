@@ -7,11 +7,11 @@
 
 import UIKit
 
-//class AddListingPhotoCollectionViewCell: UICollectionViewCell {
-//    @IBOutlet weak var addListingPhotoImageView: UIImageView!
-//    
-//    
-//    
-//    
-//    
-//}
+class AddListingPhotoCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var addListingPhotoImageView: UIImageView!
+    
+    func setCellImage(image: UIImage) {
+        addListingPhotoImageView.image = image
+    }
+}

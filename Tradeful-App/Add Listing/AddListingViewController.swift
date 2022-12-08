@@ -39,10 +39,8 @@ class AddListingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = AddListingsViewModel(delegate: self)
-//        addListingPhotosCollectionView.delegate = self
-//        addListingPhotosCollectionView.dataSource = self
-
-        // Do any additional setup after loading the view.
+        addListingPhotosCollectionView.delegate = self
+        addListingPhotosCollectionView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,17 +71,19 @@ class AddListingViewController: UIViewController {
     }
 }//End of class
 
-//extension AddListingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        10
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addListingPhotoCell", for: indexPath) as? UIColle
-//
-//        return cell
-//    }
-//}
+extension AddListingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addListingPhotoCell", for: indexPath) as? AddListingPhotoCollectionViewCell else {return UICollectionViewCell()}
+        cell.setCellImage(image: UIImage(named: "camera.add.zoom")!)
+
+        return cell
+    }
+            
+}//End of extension
 
 extension AddListingViewController: AddListingsViewModelDelegate {
     func postedListingSuccessfully() {
